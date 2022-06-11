@@ -5,7 +5,9 @@ spring:
         server-addr: localhost:8848
     sentinel:
       transport:
-        dashboard: localhost:8080
+        dashboard: localhost:9000
+      filter:
+        enabled: false
   application:
     name: provider
 server:
@@ -15,3 +17,7 @@ management:
     web:
       exposure:
         include: '*'
+rocketmq:
+  name-server: 120.48.83.127:9876
+  producer:
+    group: myprovider

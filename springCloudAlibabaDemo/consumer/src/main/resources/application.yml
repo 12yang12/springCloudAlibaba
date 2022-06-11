@@ -3,3 +3,5 @@ server:
 spring:
   application:
     name: consumer
+rocketmq:
+  name-server: 120.48.83.127:9876
